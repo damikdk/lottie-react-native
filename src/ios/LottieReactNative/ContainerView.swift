@@ -23,7 +23,7 @@ public class ContainerView: RCTView {
         animationView?.currentProgress = progress
     }
     
-    override func reactSetFrame(_ frame: CGRect) {
+    override public func reactSetFrame(_ frame: CGRect) {
         super.reactSetFrame(frame)
         animationView?.reactSetFrame(frame)
     }
