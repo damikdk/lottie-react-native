@@ -45,6 +45,7 @@ public class ContainerView: RCTView {
         }
 
         let starAnimationView = AnimationView()
+        starAnimationView.backgroundBehavior = .pauseAndRestore
         starAnimationView.animation = animation
         replaceAnimationView(next: starAnimationView)
     }
