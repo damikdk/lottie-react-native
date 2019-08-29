@@ -27,15 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-community/lottie-react-native.git"
+    "url": "git+https://github.com/damikdk/lottie-react-native.git"
   },
   "keywords": ["lottie", "animation", "react", "react-native", "keyframe"],
   "author": "Emilio Rodriguez <emiliorodriguez@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/react-native-community/lottie-react-native/issues"
+    "url": "https://github.com/damikdk/lottie-react-native/issues"
   },
-  "homepage": "https://github.com/airbnb/lottie-react-native#readme",
+  "homepage": "https://github.com/damikdk/lottie-react-native#readme",
   "peerDependencies": {
     "react": "*",
     "react-native": ">=0.46"
