@@ -117,6 +117,10 @@ class LottieView extends React.Component {
     this.runCommand('reset');
   }
 
+  async currentTime() {
+    return LottieViewManager.currentTime(this.getHandle());
+  }
+
   runCommand(name, args = []) {
     const handle = this.getHandle();
     if (!handle) {

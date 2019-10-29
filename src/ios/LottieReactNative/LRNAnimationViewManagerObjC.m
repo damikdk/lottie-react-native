@@ -14,5 +14,7 @@ RCT_EXTERN_METHOD(play:(nonnull NSNumber *)reactTag fromFrame:(nonnull NSNumber 
 
 RCT_EXTERN_METHOD(reset:(nonnull NSNumber *)reactTag);
 
+RCT_EXTERN_METHOD(currentTime:(nonnull NSNumber *)reactTag resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
+
 @end
 
