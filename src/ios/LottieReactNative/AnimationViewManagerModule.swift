@@ -53,6 +53,22 @@ class AnimationViewManagerModule: RCTViewManager {
             view.reset()
         }
     }
+   
+    @objc(currentTime:resolve:reject:)
+    public func currentTime(_ reactTag: NSNumber, resolve: @escaping RCTPromiseResolveBlock, reject:RCTPromiseRejectBlock ) -> Void {
+        
+        self.bridge.uiManager.addUIBlock { (uiManager, viewRegistry) in
+            
+            guard let view = viewRegistry?[reactTag] as? ContainerView else {
+                if (RCT_DEV == 1) {
+                    print("Invalid view returned from registry, expecting ContainerView")
+                }
+                return
+            }
+            
+            resolve(view.getCurrentTime())
+        }
+    }
     
     override static func requiresMainQueueSetup() -> Bool {
         return true
