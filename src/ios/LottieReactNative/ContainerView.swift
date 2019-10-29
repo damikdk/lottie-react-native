@@ -25,8 +25,8 @@ public class ContainerView: RCTView {
     
     @objc func getCurrentTime() -> Double {
         guard let frame = animationView?.realtimeAnimationFrame else { return 0.0; }
-        let time = animationView?.animation?.time(forFrame: frame);
-        return time != nil ? time! : 0.0
+        let time =  Double(frame) / (animationView?.animation!.framerate)!; //animationView?.animation?.time(forFrame: frame);
+        return time
     }
     
     override public func reactSetFrame(_ frame: CGRect) {
